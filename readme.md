@@ -1,0 +1,1 @@
+<p align = "center"> <img src = "./Discord/Emojis/Bunny Pat.gif"> </p>

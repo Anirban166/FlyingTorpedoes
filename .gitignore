@@ -1,0 +1,4 @@
+*.o
+*.bin
+makefile
+.DS_Store
