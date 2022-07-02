@@ -1,3 +1,4 @@
+#include "config.hpp"
 #include "../Utils/Missile.h"
 #include "../Utils/MissileSilo.h"
 
@@ -41,5 +42,6 @@ void GameLoop()
 
 int main() 
 {
+	std::cout << projectName << " Version " << projectVersion << '\n';
 	GameLoop();
 }

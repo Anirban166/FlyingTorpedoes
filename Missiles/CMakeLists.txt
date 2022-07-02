@@ -17,6 +17,7 @@ set(EXEC Executable)
 # Sub-directories
 add_subdirectory(Core)
 add_subdirectory(Utils)
+add_subdirectory(configured)
 # Gotta add the libraries in the sub-directories, e.g.: add_library(${LIB} STATIC Missile.cpp)
 
 # For making the executable without using external libraries from Utils/ (not applicable at the moment, but in case I make main.cpp a standalone unit)
