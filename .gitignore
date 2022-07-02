@@ -1,4 +1,7 @@
-# Compiled object files
+# Setting the default behavior for all files:
+* text=auto eol=lf
+# Ignored stuff:
+# 1) Compiled object files
 *.slo
 *.lo
 *.o
@@ -6,19 +9,19 @@
 *.ko
 *.elf
 *.bin
-# Precompiled headers
+# 2) Precompiled headers
 *.gch
 *.pch
-# Compiled dynamic libraries
+# 3) Compiled dynamic libraries
 *.so
 *.dylib
 *.dll
-# Compiled static libraries
+# 4) Compiled static libraries
 *.lai
 *.la
 *.a
 *.lib
-# Executables
+# 5) Executables
 *.i*86
 *.x86_64
 *.hex
@@ -26,20 +29,20 @@
 *.stackdump
 *.exe
 *.out
-# Linker output
+# 6) Linker output
 *.ilk
 *.map
 *.exp
-# Debug files
+# 7) Debug files
 *.dSYM/
 *.su
 *.idb
 *.pdb
-# VSC
+# 8) VSC
 .vscode
 *.code-workspace
 .history
-# User-specific files
+# 9) User-specific files
 *.rsuser
 *.suo
 *.user
@@ -47,7 +50,7 @@
 *.sln.docstates
 *.userprefs
 mono_crash.*
-# Build results
+# 10) Build results
 [Dd]ebug/
 [Dd]ebugPublic/
 [Rr]elease/
@@ -61,7 +64,7 @@ bld/
 [Oo]bj/
 [Ll]og/
 [Ll]ogs/
-# Files built by Visual Studio
+# 11) Files built by Visual Studio
 *_i.c
 *_p.c
 *_h.h
@@ -86,7 +89,7 @@ bld/
 *.pidb
 *.svclog
 *.scc
-# Visual C++ cache files
+# 12) Visual C++ cache files
 ipch/
 *.aps
 *.ncb
@@ -96,12 +99,12 @@ ipch/
 *.cachefile
 *.VC.db
 *.VC.VC.opendb
-# Visual Studio profiler
+# 13) Visual Studio profiler
 *.psess
 *.vsp
 *.vspx
 *.sap
-# Visual Studio trace files
+# 14) Visual Studio trace files
 *.e2e
-# Mac
+# 15) Mac
 .DS_Store
