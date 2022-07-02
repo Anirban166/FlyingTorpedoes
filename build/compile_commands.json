@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/Users/anirban166/FlyingTorpedoes/build/Core",
+  "command": "/usr/bin/clang++  -I/Users/anirban166/FlyingTorpedoes/Missiles/Utils/. -I/Users/anirban166/FlyingTorpedoes/Missiles/Utils/MissileSilo -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -std=c++17 -o CMakeFiles/Executable.dir/main.cpp.o -c /Users/anirban166/FlyingTorpedoes/Missiles/Core/main.cpp",
+  "file": "/Users/anirban166/FlyingTorpedoes/Missiles/Core/main.cpp"
+},
+{
+  "directory": "/Users/anirban166/FlyingTorpedoes/build/Utils",
+  "command": "/usr/bin/clang++  -I/Users/anirban166/FlyingTorpedoes/Missiles/Utils/. -I/Users/anirban166/FlyingTorpedoes/Missiles/Utils/MissileSilo -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -std=c++17 -o CMakeFiles/Missile.dir/Missile.cpp.o -c /Users/anirban166/FlyingTorpedoes/Missiles/Utils/Missile.cpp",
+  "file": "/Users/anirban166/FlyingTorpedoes/Missiles/Utils/Missile.cpp"
+},
+{
+  "directory": "/Users/anirban166/FlyingTorpedoes/build/Utils",
+  "command": "/usr/bin/clang++   -g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -std=c++17 -o CMakeFiles/MissileSilo.dir/MissileSilo.cpp.o -c /Users/anirban166/FlyingTorpedoes/Missiles/Utils/MissileSilo.cpp",
+  "file": "/Users/anirban166/FlyingTorpedoes/Missiles/Utils/MissileSilo.cpp"
+}
+]

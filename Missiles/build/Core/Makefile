@@ -117,25 +117,25 @@ depend:
 .PHONY : depend
 
 # Convenience name for target.
-Core/CMakeFiles/ExecutableMissile.dir/rule:
-	cd /Users/anirban166/FlyingTorpedoes/Missiles/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Core/CMakeFiles/ExecutableMissile.dir/rule
-.PHONY : Core/CMakeFiles/ExecutableMissile.dir/rule
+Core/CMakeFiles/Executable.dir/rule:
+	cd /Users/anirban166/FlyingTorpedoes/Missiles/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Core/CMakeFiles/Executable.dir/rule
+.PHONY : Core/CMakeFiles/Executable.dir/rule
 
 # Convenience name for target.
-ExecutableMissile: Core/CMakeFiles/ExecutableMissile.dir/rule
-.PHONY : ExecutableMissile
+Executable: Core/CMakeFiles/Executable.dir/rule
+.PHONY : Executable
 
 # fast build rule for target.
-ExecutableMissile/fast:
-	cd /Users/anirban166/FlyingTorpedoes/Missiles/build && $(MAKE) $(MAKESILENT) -f Core/CMakeFiles/ExecutableMissile.dir/build.make Core/CMakeFiles/ExecutableMissile.dir/build
-.PHONY : ExecutableMissile/fast
+Executable/fast:
+	cd /Users/anirban166/FlyingTorpedoes/Missiles/build && $(MAKE) $(MAKESILENT) -f Core/CMakeFiles/Executable.dir/build.make Core/CMakeFiles/Executable.dir/build
+.PHONY : Executable/fast
 
 main.o: main.cpp.o
 .PHONY : main.o
 
 # target to build an object file
 main.cpp.o:
-	cd /Users/anirban166/FlyingTorpedoes/Missiles/build && $(MAKE) $(MAKESILENT) -f Core/CMakeFiles/ExecutableMissile.dir/build.make Core/CMakeFiles/ExecutableMissile.dir/main.cpp.o
+	cd /Users/anirban166/FlyingTorpedoes/Missiles/build && $(MAKE) $(MAKESILENT) -f Core/CMakeFiles/Executable.dir/build.make Core/CMakeFiles/Executable.dir/main.cpp.o
 .PHONY : main.cpp.o
 
 main.i: main.cpp.i
@@ -143,7 +143,7 @@ main.i: main.cpp.i
 
 # target to preprocess a source file
 main.cpp.i:
-	cd /Users/anirban166/FlyingTorpedoes/Missiles/build && $(MAKE) $(MAKESILENT) -f Core/CMakeFiles/ExecutableMissile.dir/build.make Core/CMakeFiles/ExecutableMissile.dir/main.cpp.i
+	cd /Users/anirban166/FlyingTorpedoes/Missiles/build && $(MAKE) $(MAKESILENT) -f Core/CMakeFiles/Executable.dir/build.make Core/CMakeFiles/Executable.dir/main.cpp.i
 .PHONY : main.cpp.i
 
 main.s: main.cpp.s
@@ -151,7 +151,7 @@ main.s: main.cpp.s
 
 # target to generate assembly for a file
 main.cpp.s:
-	cd /Users/anirban166/FlyingTorpedoes/Missiles/build && $(MAKE) $(MAKESILENT) -f Core/CMakeFiles/ExecutableMissile.dir/build.make Core/CMakeFiles/ExecutableMissile.dir/main.cpp.s
+	cd /Users/anirban166/FlyingTorpedoes/Missiles/build && $(MAKE) $(MAKESILENT) -f Core/CMakeFiles/Executable.dir/build.make Core/CMakeFiles/Executable.dir/main.cpp.s
 .PHONY : main.cpp.s
 
 # Help Target
@@ -162,7 +162,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... ExecutableMissile"
+	@echo "... Executable"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

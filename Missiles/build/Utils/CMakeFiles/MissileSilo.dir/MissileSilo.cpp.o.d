@@ -1,7 +1,7 @@
 Utils/CMakeFiles/MissileSilo.dir/MissileSilo.cpp.o: \
   /Users/anirban166/FlyingTorpedoes/Missiles/Utils/MissileSilo.cpp \
-  /Users/anirban166/FlyingTorpedoes/Missiles/Utils/./MissileSilo.h \
-  /Users/anirban166/FlyingTorpedoes/Missiles/Utils/./Missile.h \
+  /Users/anirban166/FlyingTorpedoes/Missiles/Utils/MissileSilo.h \
+  /Users/anirban166/FlyingTorpedoes/Missiles/Utils/Missile.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/memory \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk/usr/include/pthread.h \

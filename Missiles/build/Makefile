@@ -117,17 +117,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named ExecutableMissile
+# Target rules for targets named Executable
 
 # Build rule for target.
-ExecutableMissile: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 ExecutableMissile
-.PHONY : ExecutableMissile
+Executable: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Executable
+.PHONY : Executable
 
 # fast build rule for target.
-ExecutableMissile/fast:
-	$(MAKE) $(MAKESILENT) -f Core/CMakeFiles/ExecutableMissile.dir/build.make Core/CMakeFiles/ExecutableMissile.dir/build
-.PHONY : ExecutableMissile/fast
+Executable/fast:
+	$(MAKE) $(MAKESILENT) -f Core/CMakeFiles/Executable.dir/build.make Core/CMakeFiles/Executable.dir/build
+.PHONY : Executable/fast
 
 #=============================================================================
 # Target rules for targets named Missile
@@ -163,7 +163,7 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... ExecutableMissile"
+	@echo "... Executable"
 	@echo "... Missile"
 	@echo "... MissileSilo"
 .PHONY : help

@@ -1,4 +1,4 @@
-# cd build && cmake .. && cmake --build . && ./Executable
+# cd build && cmake .. && cmake --build . && ./Core/Executable
 cmake_minimum_required(VERSION 3.16)
 set(CMAKE_CXX_STANDARD           17)
 set(CMAKE_CXX_STANDARD_REQUIRED  ON)
@@ -9,7 +9,7 @@ project(MissileSystems VERSION 1.0.0 LANGUAGES C CXX)
 # Variables (regular)
 set(LIB_A Missile) # type (string) is automatically guessed (hence, Missile works, instead of an explicit "Missile")
 set(LIB_B MissileSilo)
-set(EXEC ExecutableMissile)
+set(EXEC Executable)
 # Just an alias, to use stuff like target_link_libraries(${EXEC} PUBLIC ${LIB}) 
 # instead of target_link_libraries(executableName PUBLIC Library), and to avoid
 # changing names in the sub-directories (will be just changing it here)

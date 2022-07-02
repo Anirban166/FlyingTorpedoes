@@ -92,8 +92,8 @@ Executable_EXTERNAL_OBJECTS =
 
 Core/Executable: Core/CMakeFiles/Executable.dir/main.cpp.o
 Core/Executable: Core/CMakeFiles/Executable.dir/build.make
-Core/Executable: Utils/libMissileLibrary.a
-Core/Executable: Utils/libMissileSiloLibrary.a
+Core/Executable: Utils/libMissile.a
+Core/Executable: Utils/libMissileSilo.a
 Core/Executable: Core/CMakeFiles/Executable.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/anirban166/FlyingTorpedoes/Missiles/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Executable"
 	cd /Users/anirban166/FlyingTorpedoes/Missiles/build/Core && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Executable.dir/link.txt --verbose=$(VERBOSE)

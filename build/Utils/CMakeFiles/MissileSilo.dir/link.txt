@@ -1,0 +1,2 @@
+/usr/bin/ar qc libMissileSilo.a CMakeFiles/MissileSilo.dir/MissileSilo.cpp.o
+/usr/bin/ranlib libMissileSilo.a
