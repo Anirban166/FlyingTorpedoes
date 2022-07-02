@@ -6,7 +6,7 @@ class MissileSilo
 {
 	private:
 		inline static std::vector<MissilePointer> missileVector{};
-		MissilePool() = default;
+		MissileSilo() = default;
 
 	public:
 		static MissilePointer AcquireMissile();

@@ -1,15 +1,12 @@
-#include "Missile.h"
-#include "MissileSilo.h"
+#include "../Utils/Missile.h"
+#include "../Utils/MissileSilo.h"
 
 std::vector<std::shared_ptr<Missile>> missiles{};
 namespace missileFunctions
 {
 	void Fire() 
 	{
-		for(auto &m : missiles)
-		{
-			missiles.push_back(MissileSilo::AcquireMissile());
-		}
+		missiles.push_back(MissileSilo::AcquireMissile());
 	}
 
 	void Animate() 
@@ -27,7 +24,6 @@ namespace missileFunctions
 			m->SetVisible(false);
 		}
 		missiles.clear();
-		std::this_thread::sleep_for(1s);
 	}
 }	
 
@@ -39,8 +35,7 @@ void GameLoop()
 		++counter;
 		if(counter == 1) missileFunctions::Fire();
 		if(counter >= 1 && counter <= maximumFlightDuration) missileFunctions::Animate();
-		if(counter > maximumFlightDuration) { missileFunctions::Heatseeker(); counter = 0; } 
-		std::this_thread::sleep_for(1s);
+		if(counter > maximumFlightDuration) { missileFunctions::Heatseeker(); break; } 
 	}
 }
 
