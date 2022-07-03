@@ -2,6 +2,9 @@
     "cmake.sourceDirectory": "${workspaceFolder}/Missiles",
     "files.associations": {
         "regex": "cpp",
-        "sstream": "cpp"
+        "sstream": "cpp",
+        "memory": "cpp",
+        "algorithm": "cpp",
+        "random": "cpp"
     }
 }
