@@ -39,7 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/anirban166/FlyingTorpedoes/Missiles/build/external/Catch2/cmake_install.cmake")
+  include("/Users/anirban166/FlyingTorpedoes/Missiles/build/_deps/googletest-build/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)

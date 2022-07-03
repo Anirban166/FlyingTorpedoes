@@ -15,8 +15,18 @@ set(EXEC Executable)
 # changing names in the sub-directories (will be just changing it here)
 
 set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/") #./Missiles/cmake/*.cmake
-include(AddGitSubmodule) # include() is for Cmake module files
-add_git_submodule(external/Catch2) # For unit testing
+# include() is for Cmake module files
+include(FetchContent)
+include(AddGitSubmodule)
+
+# If needed, I'll switch to Catch2 later (https://github.com/catchorg/Catch2/blob/devel/docs/cmake-integration.md#top)
+# add_git_submodule(external/Catch2)
+# For now, I'm using GoogleTest instead for unit testing (https://google.github.io/googletest/quickstart-cmake.html)
+FetchContent_Declare(
+  googletest
+  URL https://github.com/google/googletest/archive/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip
+)
+FetchContent_MakeAvailable(googletest)
 
 # Sub-directories
 add_subdirectory(Core)
