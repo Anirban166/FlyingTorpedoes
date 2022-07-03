@@ -1,5 +1,7 @@
 prepare:
 	rm -rf build && mkdir build
+# dependency:
+# 	cd build && cmake .. --graphviz=graph.dot && dot -Tpng graph.dot -o dependencyGraph.png	
 # C = g++
 # M_DIR = ./Core/
 # U_SRC = ./Utils/
