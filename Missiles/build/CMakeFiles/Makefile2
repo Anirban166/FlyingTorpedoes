@@ -63,18 +63,21 @@ CMAKE_BINARY_DIR = /Users/anirban166/FlyingTorpedoes/Missiles/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
+all: external/Catch2/all
 all: Core/all
 all: Utils/all
 all: configured/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
+preinstall: external/Catch2/preinstall
 preinstall: Core/preinstall
 preinstall: Utils/preinstall
 preinstall: configured/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
+clean: external/Catch2/clean
 clean: Core/clean
 clean: Utils/clean
 clean: configured/clean
@@ -128,6 +131,90 @@ configured/clean:
 .PHONY : configured/clean
 
 #=============================================================================
+# Directory level rules for directory external/Catch2
+
+# Recursive "all" directory target.
+external/Catch2/all: external/Catch2/src/all
+.PHONY : external/Catch2/all
+
+# Recursive "preinstall" directory target.
+external/Catch2/preinstall: external/Catch2/src/preinstall
+.PHONY : external/Catch2/preinstall
+
+# Recursive "clean" directory target.
+external/Catch2/clean: external/Catch2/src/clean
+.PHONY : external/Catch2/clean
+
+#=============================================================================
+# Directory level rules for directory external/Catch2/src
+
+# Recursive "all" directory target.
+external/Catch2/src/all: external/Catch2/src/CMakeFiles/Catch2.dir/all
+external/Catch2/src/all: external/Catch2/src/CMakeFiles/Catch2WithMain.dir/all
+.PHONY : external/Catch2/src/all
+
+# Recursive "preinstall" directory target.
+external/Catch2/src/preinstall:
+.PHONY : external/Catch2/src/preinstall
+
+# Recursive "clean" directory target.
+external/Catch2/src/clean: external/Catch2/src/CMakeFiles/Catch2.dir/clean
+external/Catch2/src/clean: external/Catch2/src/CMakeFiles/Catch2WithMain.dir/clean
+.PHONY : external/Catch2/src/clean
+
+#=============================================================================
+# Target rules for target external/Catch2/src/CMakeFiles/Catch2.dir
+
+# All Build rule for target.
+external/Catch2/src/CMakeFiles/Catch2.dir/all:
+	$(MAKE) $(MAKESILENT) -f external/Catch2/src/CMakeFiles/Catch2.dir/build.make external/Catch2/src/CMakeFiles/Catch2.dir/depend
+	$(MAKE) $(MAKESILENT) -f external/Catch2/src/CMakeFiles/Catch2.dir/build.make external/Catch2/src/CMakeFiles/Catch2.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/anirban166/FlyingTorpedoes/Missiles/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92 "Built target Catch2"
+.PHONY : external/Catch2/src/CMakeFiles/Catch2.dir/all
+
+# Build rule for subdir invocation for target.
+external/Catch2/src/CMakeFiles/Catch2.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/anirban166/FlyingTorpedoes/Missiles/build/CMakeFiles 92
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/Catch2/src/CMakeFiles/Catch2.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/anirban166/FlyingTorpedoes/Missiles/build/CMakeFiles 0
+.PHONY : external/Catch2/src/CMakeFiles/Catch2.dir/rule
+
+# Convenience name for target.
+Catch2: external/Catch2/src/CMakeFiles/Catch2.dir/rule
+.PHONY : Catch2
+
+# clean rule for target.
+external/Catch2/src/CMakeFiles/Catch2.dir/clean:
+	$(MAKE) $(MAKESILENT) -f external/Catch2/src/CMakeFiles/Catch2.dir/build.make external/Catch2/src/CMakeFiles/Catch2.dir/clean
+.PHONY : external/Catch2/src/CMakeFiles/Catch2.dir/clean
+
+#=============================================================================
+# Target rules for target external/Catch2/src/CMakeFiles/Catch2WithMain.dir
+
+# All Build rule for target.
+external/Catch2/src/CMakeFiles/Catch2WithMain.dir/all: external/Catch2/src/CMakeFiles/Catch2.dir/all
+	$(MAKE) $(MAKESILENT) -f external/Catch2/src/CMakeFiles/Catch2WithMain.dir/build.make external/Catch2/src/CMakeFiles/Catch2WithMain.dir/depend
+	$(MAKE) $(MAKESILENT) -f external/Catch2/src/CMakeFiles/Catch2WithMain.dir/build.make external/Catch2/src/CMakeFiles/Catch2WithMain.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/anirban166/FlyingTorpedoes/Missiles/build/CMakeFiles --progress-num=93,94 "Built target Catch2WithMain"
+.PHONY : external/Catch2/src/CMakeFiles/Catch2WithMain.dir/all
+
+# Build rule for subdir invocation for target.
+external/Catch2/src/CMakeFiles/Catch2WithMain.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/anirban166/FlyingTorpedoes/Missiles/build/CMakeFiles 94
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 external/Catch2/src/CMakeFiles/Catch2WithMain.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/anirban166/FlyingTorpedoes/Missiles/build/CMakeFiles 0
+.PHONY : external/Catch2/src/CMakeFiles/Catch2WithMain.dir/rule
+
+# Convenience name for target.
+Catch2WithMain: external/Catch2/src/CMakeFiles/Catch2WithMain.dir/rule
+.PHONY : Catch2WithMain
+
+# clean rule for target.
+external/Catch2/src/CMakeFiles/Catch2WithMain.dir/clean:
+	$(MAKE) $(MAKESILENT) -f external/Catch2/src/CMakeFiles/Catch2WithMain.dir/build.make external/Catch2/src/CMakeFiles/Catch2WithMain.dir/clean
+.PHONY : external/Catch2/src/CMakeFiles/Catch2WithMain.dir/clean
+
+#=============================================================================
 # Target rules for target Core/CMakeFiles/Executable.dir
 
 # All Build rule for target.
@@ -135,7 +222,7 @@ Core/CMakeFiles/Executable.dir/all: Utils/CMakeFiles/Missile.dir/all
 Core/CMakeFiles/Executable.dir/all: Utils/CMakeFiles/MissileSilo.dir/all
 	$(MAKE) $(MAKESILENT) -f Core/CMakeFiles/Executable.dir/build.make Core/CMakeFiles/Executable.dir/depend
 	$(MAKE) $(MAKESILENT) -f Core/CMakeFiles/Executable.dir/build.make Core/CMakeFiles/Executable.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/anirban166/FlyingTorpedoes/Missiles/build/CMakeFiles --progress-num=1,2 "Built target Executable"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/anirban166/FlyingTorpedoes/Missiles/build/CMakeFiles --progress-num=95,96 "Built target Executable"
 .PHONY : Core/CMakeFiles/Executable.dir/all
 
 # Build rule for subdir invocation for target.
@@ -161,7 +248,7 @@ Core/CMakeFiles/Executable.dir/clean:
 Utils/CMakeFiles/Missile.dir/all:
 	$(MAKE) $(MAKESILENT) -f Utils/CMakeFiles/Missile.dir/build.make Utils/CMakeFiles/Missile.dir/depend
 	$(MAKE) $(MAKESILENT) -f Utils/CMakeFiles/Missile.dir/build.make Utils/CMakeFiles/Missile.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/anirban166/FlyingTorpedoes/Missiles/build/CMakeFiles --progress-num=3,4 "Built target Missile"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/anirban166/FlyingTorpedoes/Missiles/build/CMakeFiles --progress-num=97,98 "Built target Missile"
 .PHONY : Utils/CMakeFiles/Missile.dir/all
 
 # Build rule for subdir invocation for target.
@@ -187,7 +274,7 @@ Utils/CMakeFiles/Missile.dir/clean:
 Utils/CMakeFiles/MissileSilo.dir/all:
 	$(MAKE) $(MAKESILENT) -f Utils/CMakeFiles/MissileSilo.dir/build.make Utils/CMakeFiles/MissileSilo.dir/depend
 	$(MAKE) $(MAKESILENT) -f Utils/CMakeFiles/MissileSilo.dir/build.make Utils/CMakeFiles/MissileSilo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/anirban166/FlyingTorpedoes/Missiles/build/CMakeFiles --progress-num=5,6 "Built target MissileSilo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/anirban166/FlyingTorpedoes/Missiles/build/CMakeFiles --progress-num=99,100 "Built target MissileSilo"
 .PHONY : Utils/CMakeFiles/MissileSilo.dir/all
 
 # Build rule for subdir invocation for target.

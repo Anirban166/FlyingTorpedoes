@@ -117,6 +117,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named Catch2
+
+# Build rule for target.
+Catch2: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Catch2
+.PHONY : Catch2
+
+# fast build rule for target.
+Catch2/fast:
+	$(MAKE) $(MAKESILENT) -f external/Catch2/src/CMakeFiles/Catch2.dir/build.make external/Catch2/src/CMakeFiles/Catch2.dir/build
+.PHONY : Catch2/fast
+
+#=============================================================================
+# Target rules for targets named Catch2WithMain
+
+# Build rule for target.
+Catch2WithMain: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Catch2WithMain
+.PHONY : Catch2WithMain
+
+# fast build rule for target.
+Catch2WithMain/fast:
+	$(MAKE) $(MAKESILENT) -f external/Catch2/src/CMakeFiles/Catch2WithMain.dir/build.make external/Catch2/src/CMakeFiles/Catch2WithMain.dir/build
+.PHONY : Catch2WithMain/fast
+
+#=============================================================================
 # Target rules for targets named Executable
 
 # Build rule for target.
@@ -163,6 +189,8 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
+	@echo "... Catch2"
+	@echo "... Catch2WithMain"
 	@echo "... Executable"
 	@echo "... Missile"
 	@echo "... MissileSilo"

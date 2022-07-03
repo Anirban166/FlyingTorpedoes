@@ -1,0 +1,6 @@
+[submodule "openrocket"]
+	path = openrocket
+	url = https://github.com/openrocket/openrocket
+[submodule "Missiles/external/Catch2"]
+	path = Missiles/external/Catch2
+	url = https://github.com/catchorg/Catch2

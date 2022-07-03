@@ -1,5 +1,11 @@
 /Users/anirban166/FlyingTorpedoes/Missiles/build/CMakeFiles/edit_cache.dir
 /Users/anirban166/FlyingTorpedoes/Missiles/build/CMakeFiles/rebuild_cache.dir
+/Users/anirban166/FlyingTorpedoes/Missiles/build/external/Catch2/CMakeFiles/edit_cache.dir
+/Users/anirban166/FlyingTorpedoes/Missiles/build/external/Catch2/CMakeFiles/rebuild_cache.dir
+/Users/anirban166/FlyingTorpedoes/Missiles/build/external/Catch2/src/CMakeFiles/Catch2.dir
+/Users/anirban166/FlyingTorpedoes/Missiles/build/external/Catch2/src/CMakeFiles/Catch2WithMain.dir
+/Users/anirban166/FlyingTorpedoes/Missiles/build/external/Catch2/src/CMakeFiles/edit_cache.dir
+/Users/anirban166/FlyingTorpedoes/Missiles/build/external/Catch2/src/CMakeFiles/rebuild_cache.dir
 /Users/anirban166/FlyingTorpedoes/Missiles/build/Core/CMakeFiles/Executable.dir
 /Users/anirban166/FlyingTorpedoes/Missiles/build/Core/CMakeFiles/edit_cache.dir
 /Users/anirban166/FlyingTorpedoes/Missiles/build/Core/CMakeFiles/rebuild_cache.dir

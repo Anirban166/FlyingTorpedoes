@@ -14,6 +14,10 @@ set(EXEC Executable)
 # instead of target_link_libraries(executableName PUBLIC Library), and to avoid
 # changing names in the sub-directories (will be just changing it here)
 
+set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/") #./Missiles/cmake/*.cmake
+include(AddGitSubmodule) # include() is for Cmake module files
+add_git_submodule(external/Catch2) # For unit testing
+
 # Sub-directories
 add_subdirectory(Core)
 add_subdirectory(Utils)
@@ -21,8 +25,9 @@ add_subdirectory(configured)
 # Gotta add the libraries in the sub-directories, e.g.: add_library(${LIB} STATIC Missile.cpp)
 
 # For making the executable without using external libraries from Utils/ (not applicable at the moment, but in case I make main.cpp a standalone unit)
-# cmake .. -DCOMPILE_EXECUTABLE=ON && cmake --build . && ./Executable
-# if(COMPILE_EXECUTABLE)
+# cmake .. -DCOMPILE_LIBRARIES=ON && cmake --build . && ./Executable
+# option(DCOMPILE_LIBRARIES "Compile libraries?" OFF)
+# if(DCOMPILE_LIBRARIES)
 #     add_subdirectory(Utils)
 # endif()
 
