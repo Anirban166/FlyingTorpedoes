@@ -1,3 +1,7 @@
 {
-    "cmake.sourceDirectory": "${workspaceFolder}/Missiles"
+    "cmake.sourceDirectory": "${workspaceFolder}/Missiles",
+    "files.associations": {
+        "regex": "cpp",
+        "sstream": "cpp"
+    }
 }

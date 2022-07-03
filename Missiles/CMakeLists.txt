@@ -6,7 +6,7 @@ set(CMAKE_CXX_EXTENSIONS        OFF)
 
 project(MissileSystems VERSION 1.0.0 LANGUAGES C CXX)
 
-# Variables (regular)
+# Variables
 set(LIB_A Missile) # type (string) is automatically guessed (hence, Missile works, instead of an explicit "Missile")
 set(LIB_B MissileSilo)
 set(EXEC Executable)
@@ -15,7 +15,7 @@ set(EXEC Executable)
 # changing names in the sub-directories (will be just changing it here)
 
 set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake/") #./Missiles/cmake/*.cmake
-# include() is for Cmake module files
+# Cmake module files
 include(FetchContent)
 include(AddGitSubmodule)
 
@@ -27,6 +27,10 @@ FetchContent_Declare(
   URL https://github.com/google/googletest/archive/609281088cfefc76f9d0ce82e1ff6c30cc3591e5.zip
 )
 FetchContent_MakeAvailable(googletest)
+if(NOT googletest_POPULATED)
+  FetchContent_Populate(googletest)
+  add_subdirectory(${googletest_SOURCE_DIR} ${googletest_BUILD_DIR})
+endif()
 
 # Sub-directories
 add_subdirectory(Core)

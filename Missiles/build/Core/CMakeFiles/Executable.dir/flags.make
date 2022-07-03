@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/anirban166/FlyingTorpedoes/Missiles/Utils/. -I/Users/anirban166/FlyingTorpedoes/Missiles/build/configured_files/include -I/Users/anirban166/FlyingTorpedoes/Missiles/Utils/MissileSilo
+CXX_INCLUDES = -I/Users/anirban166/FlyingTorpedoes/Missiles/Utils/. -I/Users/anirban166/FlyingTorpedoes/Missiles/build/configured_files/include -I/Users/anirban166/FlyingTorpedoes/Missiles/Utils/MissileSilo -isystem /Users/anirban166/FlyingTorpedoes/Missiles/build/_deps/googletest-src/googletest/include -isystem /Users/anirban166/FlyingTorpedoes/Missiles/build/_deps/googletest-src/googletest -isystem /Users/anirban166/FlyingTorpedoes/Missiles/build/_deps/googletest-src/googlemock/include -isystem /Users/anirban166/FlyingTorpedoes/Missiles/build/_deps/googletest-src/googlemock
 
 CXX_FLAGSarm64 =  -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX12.1.sdk -std=c++17
 
